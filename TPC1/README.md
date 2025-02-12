@@ -12,7 +12,7 @@
 ##### Dado o seguinte input:
 "10 20Off30 40On50=Off60On70="
 ##### O resultado será:
-> 80
+> 80<br>
 > 150<br>
 
 #### Explicação:
