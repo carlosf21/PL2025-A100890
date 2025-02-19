@@ -1,0 +1,7 @@
+Barroco: 15
+Medieval: 34
+Renascimento: 27
+Século XX: 12
+Clássico: 9
+Romântico: 11
+Contemporâneo: 3

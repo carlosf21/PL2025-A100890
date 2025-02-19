@@ -1,0 +1,125 @@
+Barroco:
+  - Ab Irato
+  - Die Ideale, S.106
+  - Hungarian Rhapsody No. 16
+  - Hungarian Rhapsody No. 5
+  - Impromptu Op.51
+  - Mazurkas, Op. 50
+  - Military Band No. 1
+  - Nocturne in C minor
+  - Polonaise-Fantasie
+  - Polonaises Op.71
+  - Preludes Op. 11
+  - Preludes Op. 49
+  - Prince Rostislav
+  - Symphonies de Beethoven
+  - Études Op.10
+
+Medieval:
+  - Adagio in B minor
+  - Barcarole Op. 60
+  - Coriolan Overture
+  - Eroica Variations
+  - Fantasia in D minor
+  - Fantasy on Hungarian Folk Themes
+  - Faust Overture
+  - Gigue in G major, K. 574
+  - Grande valse brillante
+  - Hungarian Rhapsody No. 11
+  - Hungarian Rhapsody No. 13
+  - Hungarian Rhapsody No. 15
+  - Hungarian Rhapsody No. 3
+  - Hungarian Rhapsody No. 4
+  - Hungarian Rhapsody No. 7
+  - Impromptu, Op. 29
+  - La Savane
+  - Mazurkas, Op. 30
+  - Mazurkas, Op. 63
+  - Mazurkas, Op. 67
+  - Morceau de salon
+  - Preludes Op. 11 No. 4
+  - Première rhapsodie
+  - Prélude, Choral et Fugue
+  - Rhapsodie Espagnole
+  - Romance in F major
+  - Rondo for Piano No. 3
+  - Serenade for Strings
+  - Suite No. 1 for two pianos
+  - Suite No. 2 for two pianos
+  - Suite in D minor, HWV 437
+  - Tönet, ihr Pauken! Erschallet, Trompeten!, BWV 214
+  - Valses Sentimentales
+  - Variations in F minor
+
+Renascimento:
+  - Bagatelles, Opus 119
+  - Bagatelles, Opus 33
+  - Cantatas, BWV 141-150
+  - Estampes
+  - Fantaisie brillante, Op. 22
+  - Hamlet, S.104
+  - Hungarian Rhapsody No. 10
+  - Hungarian Rhapsody No. 12
+  - Hungarian Rhapsody No.1
+  - Komm, Jesu, komm!
+  - Legends, Op.59
+  - Liturgy of St. John Chrysostom
+  - Marie-Magdeleine
+  - Mazurkas, Op. 56
+  - Morceaux de Salon, Op. 10
+  - Nocturne in A-flat
+  - Polonaises, Op.26
+  - Preludes Op. 11
+  - Preludes, Op. 32
+  - Romance in G major
+  - Scherzo No.4
+  - Schubert's Valses Nobles
+  - Six Pieces for Piano, Op. 118
+  - Symphonic Dances, Op. 64
+  - The Creatures of Prometheus
+  - Valse romantique
+  - Variation on a Waltz by Diabelli
+
+Século XX:
+  - Berceuse
+  - Eleven Chorale Preludes, Op. 122
+  - Fürchte dich nicht
+  - Hungarian Rhapsody No. 17
+  - Papillons
+  - Peer Gynt Suite Suite No. 1
+  - Serenade for Strings
+  - Singet dem Herrn ein neues Lied
+  - Sonatina in G
+  - The Storm, Op.76
+  - Variations on a Theme of Chopin, Op. 22
+  - Études Op. 25
+
+Clássico:
+  - Capriccio Italien
+  - Czech Suite
+  - Hungarian Rhapsody No. 14
+  - Hungarian Rhapsody No. 18
+  - Scherzo No.3
+  - Serenade for Strings in G minor
+  - Serenata Notturna
+  - Stabat Mater
+  - Suite for Orchestra in B minor
+
+Romântico:
+  - Fantasy No. 4
+  - Feu d'artifice
+  - Feuilles d'Album
+  - Grande Tarantelle
+  - Lobet den Herrn, alle Heiden
+  - Overture, Scherzo and Finale
+  - Präludium und Fuge über das Thema B-A-C-H
+  - Salve Regina
+  - Waltzes, Op. 34
+  - Études Op. 25
+  - Études Op.10
+
+Contemporâneo:
+  - Impromptu, Op. 36
+  - Polonaises, Op.40
+  - Études Op. 25
+
