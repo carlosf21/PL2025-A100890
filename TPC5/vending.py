@@ -11,7 +11,8 @@ tokens = (
     'SELECIONAR',
     'SAIR',
     'CODIGO',
-    'VALOR'
+    'VALOR',
+    'PONTOS'	
 )
 
 t_ignore = " \t"
@@ -39,6 +40,11 @@ def t_CODIGO(t):
 def t_VALOR(t):
     r'\d+e|\d+c'
     return t
+
+def t_PONTOS(t):
+    r'\. \. \.'
+    return t
+
 
 def t_error(t):
     t.lexer.skip(1)
@@ -99,6 +105,12 @@ def calcular_troco(saldo):
 def processar_comando(comando, saldo, stock):
     lexer.input(comando)
     tokens = [tok for tok in lexer]
+    
+    
+    if tokens and tokens[0].type == "PONTOS":
+        print(f"maq: Saldo = {saldo // 100}e{saldo % 100}c")
+        return saldo
+    
     if not tokens:
         return saldo
 

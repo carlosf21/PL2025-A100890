@@ -52,5 +52,10 @@ Este programa simula uma máquina de vending que gere o stock de produtos e proc
 7. **Listar com produto em falta**
     ##### ![listar2](results/listar2.png)
 
-7. **Selecionar produto com falta de stock**
-    ##### ![selecionar_produto_esg](results/produto_esg.png)                          
+8. **Selecionar produto com falta de stock**
+    ##### ![selecionar_produto_esg](results/produto_esg.png)   
+
+9. **Reticências (mostrar saldo)**
+    ##### ![saldo](results/saldo.png)   
+    
+                           
