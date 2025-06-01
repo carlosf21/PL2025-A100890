@@ -1,0 +1,90 @@
+START
+// Declaring variable num1 of type integer
+PUSHI 0     // Initialize num1 with 0
+STOREG 0  // Store in global position 0
+// Declaring variable num2 of type integer
+PUSHI 0     // Initialize num2 with 0
+STOREG 1  // Store in global position 1
+// WRITELN statement
+PUSHS "Introduza dois números inteiros:"         // Push string "Introduza dois números inteiros:"
+WRITES      // Write string
+WRITELN     // Print newline
+READ
+ATOI
+STOREG 0
+READ
+ATOI
+STOREG 1
+// WRITELN statement
+PUSHS "A soma é: "         // Push string "A soma é: "
+WRITES      // Write string
+PUSHG 0      // Push variable num1
+PUSHG 1      // Push variable num2
+ADD         // Add integers
+WRITEI      // Write integer
+WRITELN     // Print newline
+// WRITELN statement
+PUSHS "A diferença é: "         // Push string "A diferença é: "
+WRITES      // Write string
+PUSHG 0      // Push variable num1
+PUSHG 1      // Push variable num2
+SUB         // Subtract integers
+WRITEI      // Write integer
+WRITELN     // Print newline
+// WRITELN statement
+PUSHS "O produto é: "         // Push string "O produto é: "
+WRITES      // Write string
+PUSHG 0      // Push variable num1
+PUSHG 1      // Push variable num2
+MUL         // Multiply integers
+WRITEI      // Write integer
+WRITELN     // Print newline
+// WRITELN statement
+PUSHG 0      // Push variable num1
+WRITEI      // Write integer
+PUSHS "+"         // Push string "+"
+WRITES      // Write string
+PUSHG 0      // Push variable num1
+WRITEI      // Write integer
+PUSHS "*"         // Push string "*"
+WRITES      // Write string
+PUSHG 1      // Push variable num2
+WRITEI      // Write integer
+PUSHS "="         // Push string "="
+WRITES      // Write string
+PUSHG 0      // Push variable num1
+PUSHG 0      // Push variable num1
+PUSHG 1      // Push variable num2
+MUL         // Multiply integers
+ADD         // Add integers
+WRITEI      // Write integer
+WRITELN     // Print newline
+// WRITELN statement
+PUSHG 0      // Push variable num1
+WRITEI      // Write integer
+PUSHS "*"         // Push string "*"
+WRITES      // Write string
+PUSHG 0      // Push variable num1
+WRITEI      // Write integer
+PUSHS "+"         // Push string "+"
+WRITES      // Write string
+PUSHG 1      // Push variable num2
+WRITEI      // Write integer
+PUSHS "="         // Push string "="
+WRITES      // Write string
+PUSHG 0      // Push variable num1
+PUSHG 0      // Push variable num1
+MUL         // Multiply integers
+PUSHG 1      // Push variable num2
+ADD         // Add integers
+WRITEI      // Write integer
+WRITELN     // Print newline
+// WRITELN statement
+PUSHS "A divisão é: "         // Push string "A divisão é: "
+WRITES      // Write string
+PUSHG 0      // Push variable num1
+PUSHG 1      // Push variable num2
+DIV         // Integer division
+WRITEI      // Write integer
+WRITELN     // Print newline
+STOP

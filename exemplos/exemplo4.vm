@@ -1,0 +1,75 @@
+START
+// Declaring variable num of type integer
+PUSHI 0     // Initialize num with 0
+STOREG 0  // Store in global position 0
+// Declaring variable i of type integer
+PUSHI 0     // Initialize i with 0
+STOREG 1  // Store in global position 1
+// Declaring variable primo of type boolean
+PUSHI 0     // Initialize primo with false
+STOREG 2  // Store in global position 2
+// WRITELN statement
+PUSHS "Introduza um número inteiro positivo:"         // Push string "Introduza um número inteiro positivo:"
+WRITES      // Write string
+WRITELN     // Print newline
+READ
+ATOI
+STOREG 0
+// Assignment to primo
+PUSHI 1      // Push boolean True
+STOREG 2  // Store value in variable primo
+// Assignment to i
+PUSHI 2         // Push integer 2
+STOREG 1  // Store value in variable i
+// WHILE loop 0
+WHILE0:       // Loop start
+// Parenthesized expression
+PUSHG 1      // Push variable i
+// Parenthesized expression
+PUSHG 0      // Push variable num
+PUSHI 2         // Push integer 2
+DIV         // Integer division
+// Comparison operation: <=
+INFEQ       // Check less or equal
+PUSHG 2      // Push variable primo
+AND         // Logical AND
+JZ ENDWHILE0  // Exit if condition false
+// IF statement
+// Parenthesized expression
+PUSHG 0      // Push variable num
+PUSHG 1      // Push variable i
+MOD         // Modulo operation
+PUSHI 0         // Push integer 0
+// Comparison operation: =
+EQUAL       // Check equality
+JZ ENDIF0    // Jump to end if condition false
+// Assignment to primo
+PUSHI 0      // Push boolean False
+STOREG 2  // Store value in variable primo
+ENDIF0:      // End of IF
+// Assignment to i
+PUSHG 1      // Push variable i
+PUSHI 1         // Push integer 1
+ADD         // Add integers
+STOREG 1  // Store value in variable i
+JUMP WHILE0   // Jump back to condition
+ENDWHILE0:    // End of loop
+// IF statement
+PUSHG 2      // Push variable primo
+JZ ELSE0   // Jump to ELSE if condition false
+// WRITELN statement
+PUSHG 0      // Push variable num
+WRITEI      // Write integer
+PUSHS " é um número primo"         // Push string " é um número primo"
+WRITES      // Write string
+WRITELN     // Print newline
+JUMP ENDIF1  // Skip ELSE part
+ELSE0:     // ELSE part
+// WRITELN statement
+PUSHG 0      // Push variable num
+WRITEI      // Write integer
+PUSHS " não é um número primo"         // Push string " não é um número primo"
+WRITES      // Write string
+WRITELN     // Print newline
+ENDIF1:      // End of IF-ELSE
+STOP

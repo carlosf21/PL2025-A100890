@@ -1,0 +1,32 @@
+START
+// Declaring variable x of type integer
+PUSHI 0     // Initialize x with 0
+STOREG 0  // Store in global position 0
+// Assignment to x
+PUSHI 15         // Push integer 15
+STOREG 0  // Store value in variable x
+// IF statement
+PUSHG 0      // Push variable x
+PUSHI 10         // Push integer 10
+// Comparison operation: >
+SUP         // Check greater than
+JZ ENDIF1    // Jump to end if condition false
+// IF statement
+PUSHG 0      // Push variable x
+PUSHI 20         // Push integer 20
+// Comparison operation: <
+INF         // Check less than
+JZ ELSE0   // Jump to ELSE if condition false
+// WRITELN statement
+PUSHS "x está entre 10 e 20"         // Push string "x está entre 10 e 20"
+WRITES      // Write string
+WRITELN     // Print newline
+JUMP ENDIF0  // Skip ELSE part
+ELSE0:     // ELSE part
+// WRITELN statement
+PUSHS "x é maior ou igual a 20"         // Push string "x é maior ou igual a 20"
+WRITES      // Write string
+WRITELN     // Print newline
+ENDIF0:      // End of IF-ELSE
+ENDIF1:      // End of IF
+STOP

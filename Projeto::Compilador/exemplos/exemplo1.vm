@@ -1,0 +1,6 @@
+START
+// WRITELN statement
+PUSHS "Ola, Mundo!"         // Push string "Ola, Mundo!"
+WRITES      // Write string
+WRITELN     // Print newline
+STOP

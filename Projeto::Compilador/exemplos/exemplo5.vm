@@ -1,0 +1,48 @@
+START
+// Declaring array numeros[5] of integer
+PUSHI 0     // Initialize numeros[0] with 0
+PUSHI 0     // Initialize numeros[1] with 0
+PUSHI 0     // Initialize numeros[2] with 0
+PUSHI 0     // Initialize numeros[3] with 0
+PUSHI 0     // Initialize numeros[4] with 0
+// Declaring variable i of type integer
+PUSHI 0     // Initialize i with 0
+STOREG 5  // Store in global position 5
+// Declaring variable soma of type integer
+PUSHI 0     // Initialize soma with 0
+STOREG 6  // Store in global position 6
+// Assignment to soma
+PUSHI 0         // Push integer 0
+STOREG 6  // Store value in variable soma
+// WRITELN statement
+PUSHS "Introduza 5 números inteiros:"         // Push string "Introduza 5 números inteiros:"
+WRITES      // Write string
+WRITELN     // Print newline
+// FOR loop with variable i
+PUSHI 1         // Push integer 1
+STOREG 1        // Initialize loop variable
+WHILE0:       // Loop start
+PUSHG 1     // Get loop variable
+PUSHI 5         // Push integer 5
+// Get end value
+INFEQ       // Check if var <= end
+JZ ENDWHILE0  // Exit if condition false
+READ
+ATOI
+// Assignment to soma
+PUSHG 6      // Push variable soma
+ADD         // Add integers
+STOREG 6  // Store value in variable soma
+PUSHG 1     // Get loop variable
+PUSHI 1  // Increment/decrement
+ADD         // Update loop variable
+STOREG 1        // Store updated value
+JUMP WHILE0   // Jump back to condition
+ENDWHILE0:    // End of FOR loop
+// WRITELN statement
+PUSHS "A soma dos números é: "         // Push string "A soma dos números é: "
+WRITES      // Write string
+PUSHG 6      // Push variable soma
+WRITEI      // Write integer
+WRITELN     // Print newline
+STOP

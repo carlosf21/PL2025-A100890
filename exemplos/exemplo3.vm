@@ -1,0 +1,51 @@
+START
+// Declaring variable n of type integer
+PUSHI 0     // Initialize n with 0
+STOREG 0  // Store in global position 0
+// Declaring variable i of type integer
+PUSHI 0     // Initialize i with 0
+STOREG 1  // Store in global position 1
+// Declaring variable fat of type integer
+PUSHI 0     // Initialize fat with 0
+STOREG 2  // Store in global position 2
+// WRITELN statement
+PUSHS "Introduza um número inteiro positivo:"         // Push string "Introduza um número inteiro positivo:"
+WRITES      // Write string
+WRITELN     // Print newline
+READ
+ATOI
+STOREG 0
+// Assignment to fat
+PUSHI 1         // Push integer 1
+STOREG 2  // Store value in variable fat
+// FOR loop with variable i
+PUSHI 1         // Push integer 1
+STOREG 1        // Initialize loop variable
+WHILE0:       // Loop start
+PUSHG 1     // Get loop variable
+PUSHG 0      // Push variable n
+// Get end value
+INFEQ       // Check if var <= end
+JZ ENDWHILE0  // Exit if condition false
+// Assignment to fat
+PUSHG 2      // Push variable fat
+PUSHG 1      // Push variable i
+MUL         // Multiply integers
+STOREG 2  // Store value in variable fat
+PUSHG 1     // Get loop variable
+PUSHI 1  // Increment/decrement
+ADD         // Update loop variable
+STOREG 1        // Store updated value
+JUMP WHILE0   // Jump back to condition
+ENDWHILE0:    // End of FOR loop
+// WRITELN statement
+PUSHS "Fatorial de "         // Push string "Fatorial de "
+WRITES      // Write string
+PUSHG 0      // Push variable n
+WRITEI      // Write integer
+PUSHS ": "         // Push string ": "
+WRITES      // Write string
+PUSHG 2      // Push variable fat
+WRITEI      // Write integer
+WRITELN     // Print newline
+STOP

@@ -1,0 +1,77 @@
+START
+// Declaring variable num1 of type Integer
+PUSHI 0     // Initialize num1 with 0
+STOREG 0  // Store in global position 0
+// Declaring variable num2 of type Integer
+PUSHI 0     // Initialize num2 with 0
+STOREG 1  // Store in global position 1
+// Declaring variable num3 of type Integer
+PUSHI 0     // Initialize num3 with 0
+STOREG 2  // Store in global position 2
+// Declaring variable maior of type Integer
+PUSHI 0     // Initialize maior with 0
+STOREG 3  // Store in global position 3
+// WRITE statement
+PUSHS "Introduza o primeiro número: "         // Push string "Introduza o primeiro número: "
+WRITES      // Write string
+READ
+ATOI
+STOREG 0
+// WRITE statement
+PUSHS "Introduza o segundo número: "         // Push string "Introduza o segundo número: "
+WRITES      // Write string
+READ
+ATOI
+STOREG 1
+// WRITE statement
+PUSHS "Introduza o terceiro número: "         // Push string "Introduza o terceiro número: "
+WRITES      // Write string
+READ
+ATOI
+STOREG 2
+// IF statement
+PUSHG 0      // Push variable num1
+PUSHG 1      // Push variable num2
+// Comparison operation: >
+SUP         // Check greater than
+JZ ELSE2   // Jump to ELSE if condition false
+// IF statement
+PUSHG 0      // Push variable num1
+PUSHG 2      // Push variable num3
+// Comparison operation: >
+SUP         // Check greater than
+JZ ELSE0   // Jump to ELSE if condition false
+// Assignment to maior
+PUSHG 0      // Push variable num1
+STOREG 3  // Store value in variable maior
+JUMP ENDIF0  // Skip ELSE part
+ELSE0:     // ELSE part
+// Assignment to maior
+PUSHG 2      // Push variable num3
+STOREG 3  // Store value in variable maior
+ENDIF0:      // End of IF-ELSE
+JUMP ENDIF2  // Skip ELSE part
+ELSE2:     // ELSE part
+// IF statement
+PUSHG 1      // Push variable num2
+PUSHG 2      // Push variable num3
+// Comparison operation: >
+SUP         // Check greater than
+JZ ELSE1   // Jump to ELSE if condition false
+// Assignment to maior
+PUSHG 1      // Push variable num2
+STOREG 3  // Store value in variable maior
+JUMP ENDIF1  // Skip ELSE part
+ELSE1:     // ELSE part
+// Assignment to maior
+PUSHG 2      // Push variable num3
+STOREG 3  // Store value in variable maior
+ENDIF1:      // End of IF-ELSE
+ENDIF2:      // End of IF-ELSE
+// WRITELN statement
+PUSHS "O maior é: "         // Push string "O maior é: "
+WRITES      // Write string
+PUSHG 3      // Push variable maior
+WRITEI      // Write integer
+WRITELN     // Print newline
+STOP

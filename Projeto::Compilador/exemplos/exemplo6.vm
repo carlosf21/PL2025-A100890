@@ -1,0 +1,71 @@
+START
+// Declaring variable bin of type string
+PUSHS ""     // Initialize bin with empty string
+STOREG 0  // Store in global position 0
+// Declaring variable i of type integer
+PUSHI 0     // Initialize i with 0
+STOREG 1  // Store in global position 1
+// Declaring variable valor of type integer
+PUSHI 0     // Initialize valor with 0
+STOREG 2  // Store in global position 2
+// Declaring variable potencia of type integer
+PUSHI 0     // Initialize potencia with 0
+STOREG 3  // Store in global position 3
+// WRITELN statement
+PUSHS "Introduza uma string binária:"         // Push string "Introduza uma string binária:"
+WRITES      // Write string
+WRITELN     // Print newline
+READ
+STOREG 0
+// Assignment to valor
+PUSHI 0         // Push integer 0
+STOREG 2  // Store value in variable valor
+// Assignment to potencia
+PUSHI 1         // Push integer 1
+STOREG 3  // Store value in variable potencia
+// FOR loop with variable i
+PUSHG 0      // Push variable bin
+STRLEN          // Get length of string
+STOREG 1        // Initialize loop variable
+WHILE0:       // Loop start
+PUSHI 1         // Push integer 1
+// Get end value
+PUSHG 1     // Get loop variable
+INFEQ       // Check if end <= var
+JZ ENDWHILE0  // Exit if condition false
+// IF statement
+// Access string char bin[expr]
+PUSHG 0   // Push string base
+PUSHG 1      // Push variable i
+PUSHI 1
+SUB          // convert to 0-based
+CHARAT         // returns ASCII of char
+PUSHS "1"         // Push string "1"
+// Comparison operation: =
+CHRCODE
+EQUAL       // Check equality
+JZ ENDIF0    // Jump to end if condition false
+// Assignment to valor
+PUSHG 2      // Push variable valor
+PUSHG 3      // Push variable potencia
+ADD         // Add integers
+STOREG 2  // Store value in variable valor
+ENDIF0:      // End of IF
+// Assignment to potencia
+PUSHG 3      // Push variable potencia
+PUSHI 2         // Push integer 2
+MUL         // Multiply integers
+STOREG 3  // Store value in variable potencia
+PUSHG 1     // Get loop variable
+PUSHI -1  // Increment/decrement
+ADD         // Update loop variable
+STOREG 1        // Store updated value
+JUMP WHILE0   // Jump back to condition
+ENDWHILE0:    // End of FOR loop
+// WRITELN statement
+PUSHS "O valor inteiro correspondente é: "         // Push string "O valor inteiro correspondente é: "
+WRITES      // Write string
+PUSHG 2      // Push variable valor
+WRITEI      // Write integer
+WRITELN     // Print newline
+STOP

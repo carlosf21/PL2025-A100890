@@ -1,0 +1,24 @@
+START
+// Declaring variable i of type integer
+PUSHI 0     // Initialize i with 0
+STOREG 0  // Store in global position 0
+// FOR loop with variable i
+PUSHI 5         // Push integer 5
+STOREG 0        // Initialize loop variable
+WHILE0:       // Loop start
+PUSHI 1         // Push integer 1
+// Get end value
+PUSHG 0     // Get loop variable
+INFEQ       // Check if end <= var
+JZ ENDWHILE0  // Exit if condition false
+// WRITELN statement
+PUSHG 0      // Push variable i
+WRITEI      // Write integer
+WRITELN     // Print newline
+PUSHG 0     // Get loop variable
+PUSHI -1  // Increment/decrement
+ADD         // Update loop variable
+STOREG 0        // Store updated value
+JUMP WHILE0   // Jump back to condition
+ENDWHILE0:    // End of FOR loop
+STOP
